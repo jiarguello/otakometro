@@ -1,11 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import * as S from './Styled/S.Login';
 import Logo from '../images/Logo.png'
 import { Redirect } from 'react-router';
 import { MyContext } from '../context/MyContext';
+import validateLogin from '../services/loginValidation';
 
 function Login() {
-  const { redirect, setRedirect } = useContext(MyContext);
+  const { user, setUser, validate, setValidate, redirect, setRedirect } = useContext(MyContext);
+  
+  const validation = async () => {
+    const verify = await validateLogin.isValid(user);
+    setValidate(verify);
+  }
+
+  useEffect(() => {
+    validation();
+  })
   return (
     <S.Div>
       <S.Img
@@ -18,15 +28,18 @@ function Login() {
           type="text"
           id="email"
           placeholder="Nome"
+          onChange={ ({ target }) => setUser({ ...user, email: target.value })}
         />
         <S.Input
           type="password"
           id="password"
           placeholder="Senha"
+          onChange={ ({ target }) => setUser({ ...user, password: target.value })}
         />
       </S.Section>
       <S.ButtonLogin
         type="button"
+        disabled={ !validate }
         onClick={ () => setRedirect(true) }
       >
         Entrar

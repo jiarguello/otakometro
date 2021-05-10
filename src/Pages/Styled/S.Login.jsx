@@ -55,4 +55,8 @@ export const ButtonLogin = styled.button`
   min-heigth: 45px;
   min-width: 250px;
   width: 78%;
+
+  &:hover {
+    background-color: red; 
+  }
 `

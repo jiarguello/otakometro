@@ -42,6 +42,10 @@ export const ButtonShare = styled.button`
   min-width: 250px;
   max-width: 700px;
   width: 78%;
+
+  &:hover {
+    background-color: red;
+  }
 `
 
 export const P = styled.p`

@@ -28,6 +28,10 @@ export const ButtonStart = styled.button`
   min-heigth: 45px;
   min-width: 250px;
   width: 78%;
+
+  &:hover {
+    background-color: green; 
+  }
 `
 
 export const Paragraph = styled.p`

@@ -5,6 +5,7 @@ const MyContext = createContext();
 
 function Provider({ children }) {
   const [user, setUser] = useState();
+  const [validate, setValidate] = useState(false);
   const [redirect, setRedirect] = useState(false);
   const [score, setScore] = useState(0);
   const [ask, setAsk] = useState(0);
@@ -12,6 +13,8 @@ function Provider({ children }) {
   const value = {
     user,
     setUser,
+    validate,
+    setValidate,
     redirect,
     setRedirect,
     score,

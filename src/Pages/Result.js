@@ -53,12 +53,12 @@ function Result() {
       >
         Testar novamente
       </S.ButtonShare>
-      <S.ButtonShare
+      {/* <S.ButtonShare
         type="button"
         // onClick=""
       >
         Compartilhar
-      </S.ButtonShare>
+      </S.ButtonShare> */}
       {
         redirect === null && <Redirect to="/" />
       }

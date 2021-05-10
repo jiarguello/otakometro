@@ -23,6 +23,10 @@ export const ButtonAsk = styled.button`
   padding: 5px;
   text-align: left;
   width: 100%;
+
+  &:hover {
+    background-color: rgb(134, 110, 6);
+  }
 `
 
 export const H3 = styled.h3`
