@@ -28,9 +28,9 @@ export const H3 = styled.h3`
 `
 
 export const Section = styled.section`
-  max-height: 40vh;  
   display: flex;
   flex-direction: column;
+  max-height: 40vh;  
   max-width: 500px;
   width: 78%;
 `
@@ -45,18 +45,22 @@ export const Div = styled.div`
   text-align: center;
 `
 export const ButtonLogin = styled.button`
-  background-color: rgb(199, 44, 44);
+  background-color: red;
   border-color: black;
   border-radius: 1em;
   color: white;
-  height: 2.5em;
   font-size: 1.5em;
+  height: 2.5em;
   max-width: 500px;
   min-heigth: 45px;
   min-width: 250px;
   width: 78%;
+`
 
-  &:hover {
-    background-color: red; 
-  }
+export const P = styled.p`
+  color: white;
+  font-size: 1em;
+  margin: 15px 0px;
+  min-width: 250px;
+  width: 100%;
 `

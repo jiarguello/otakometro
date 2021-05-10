@@ -6,13 +6,27 @@ import { MyContext } from '../context/MyContext';
 import validateLogin from '../services/loginValidation';
 
 function Login() {
-  const { user, setUser, validate, setValidate, redirect, setRedirect } = useContext(MyContext);
+  const {
+    user, setUser,
+    validate, setValidate,
+    errorLogin, setErrorLogin,
+    redirect, setRedirect,
+  } = useContext(MyContext);
   
   const validation = async () => {
     const verify = await validateLogin.isValid(user);
     setValidate(verify);
+    verify && setErrorLogin(false);
   }
 
+  const loginVerify = () => {
+    if (validate) {
+      setRedirect(true);
+    }
+    setErrorLogin(true)
+  }
+
+  console.log(validate);
   useEffect(() => {
     validation();
   })
@@ -36,11 +50,11 @@ function Login() {
           placeholder="Senha"
           onChange={ ({ target }) => setUser({ ...user, password: target.value })}
         />
+      { errorLogin && <S.P>E-mail inválido ou senha com menos de 6 dígitos</S.P> }
       </S.Section>
       <S.ButtonLogin
         type="button"
-        disabled={ !validate }
-        onClick={ () => setRedirect(true) }
+        onClick={ () => loginVerify() }
       >
         Entrar
       </S.ButtonLogin>

@@ -22,12 +22,12 @@ export const DivResult = styled.div`
   background-color: white;
   border-radius: 5%;
   display: flex;
+  flex-direction: column;
   height: 50vh;
+  justify-content: space-evenly;
   max-height: 40vh;
   max-width: 700px;
-  flex-direction: column;
   padding: 5px;
-  justify-content: space-evenly;
   width: 78%;
 `
 
@@ -36,8 +36,8 @@ export const ButtonShare = styled.button`
   border-color: black;
   border-radius: 1em;
   color: white;
-  height: 2.5em;
   font-size: 1.5em;
+  height: 2.5em;
   min-heigth: 45px;
   min-width: 250px;
   max-width: 700px;

@@ -15,8 +15,8 @@ export const ButtonAsk = styled.button`
   border-color: black;
   border-radius: 0.5em;
   color: white;
-  height: 20%;
   font-size: 120%;
+  height: 20%;
   margin: 5px 0px;
   min-heigth: 45px;
   min-width: 250px;
@@ -30,10 +30,10 @@ export const ButtonAsk = styled.button`
 `
 
 export const H3 = styled.h3`
-  text-align: center;
   background-color: white;
   font-size: 5vh;
   padding: 10px 10px;
+  text-align: center;
   width: 90%;
 `
 
@@ -45,17 +45,16 @@ export const P = styled.p`
 
 export const DivText = styled.div`
   align-items: center;  
-  height: 30vh;
-  display: flex;
+  background-color: white;
   border: 5px solid black;
   border-radius: 5%;
-  background-color: white;
+  display: flex;
   flex-direction: column;
+  height: 30vh;
   width: 78%;
 `
 
 export const Section = styled.section`
   height: 50vh;
-  heigth: 50%;
   width: 78%;
 `
