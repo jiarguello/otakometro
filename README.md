@@ -52,8 +52,6 @@
 
 ### Tecnologias
 
-[![Generic badge](https://img.shields.io/badge/MADE%20WITH-React-blue?style=for-the-badge&logo=appveyor)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/MADE%20WITH-Styled-Components-black?style=for-the-badge&logo=appveyor)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/MADE%20WITH-JavaScript-yellow?style=for-the-badge&logo=appveyor)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/MADE%20WITH-Context-API-blue?style=for-the-badge&logo=appveyor)](https://shields.io/)
-
+[![Generic badge](https://img.shields.io/badge/MADE%20WITH-REACT%20JS-blue?style=for-the-badge&logo=appveyor)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/MADE%20WITH-Styled%20Components-red?style=for-the-badge&logo=appveyor)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/MADE%20WITH-Context%20API-yellow?style=for-the-badge&logo=appveyor)](https://shields.io/)
