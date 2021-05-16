@@ -2,14 +2,14 @@
 
 ## Quer saber se você é um Otaku? Faça o teste e descubra!
 
-[![Generic badge](https://img.shields.io/badge/STATUS-FINISHED-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/STATUS-IN_PROGRESS-<COLOR>.svg)](https://shields.io/)
 
 ***
 
 <p align="center">
  <a href="#Sobre">Sobre</a> •
  <a href="#Teste a Ferramenta">Teste a Ferramenta</a> •
- <a href="#Features">Features</a> •
+ <a href="#🚧 Features 🚧">Features</a> •
  <a href="#Versões">Versões</a> •
  <a href="#Tecnologias">Tecnologias</a>
 </p>
@@ -32,7 +32,6 @@
 <p>É possível testar a versão atual em: <a href="https://jiarguello.github.io/otakometro/" target="_blank">Projeto Otakômetro</a></p> 
 
 ***
-
 
 ### 🚧 Features 🚧
 
