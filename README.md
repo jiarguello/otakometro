@@ -1,4 +1,4 @@
-# Otakômetro :heavy_check_mark:
+# 🚧 Otakômetro 🚧
 
 ## Quer saber se você é um Otaku? Faça o teste e descubra!
 
